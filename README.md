@@ -9,12 +9,12 @@ JWT authentication and authorization
 
 # CRUD Operations -
 
-- signup: (CREATE) (POST)
+- signUp: (CREATE) (POST)
 
 Check email and userId duplication in records
 and registered users
    
-- signin: (POST)
+- signIn: (POST)
 
 Find username in database, if it exists
 compare the passwords using bcrypt, if it is correct
