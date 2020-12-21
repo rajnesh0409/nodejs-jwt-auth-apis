@@ -12,7 +12,7 @@ JWT authentication and authorization
 - signup: (CREATE) (POST)
 
 Check email and userId duplication in records
-Registered users
+and registered users
    
 - signin: (POST)
 
