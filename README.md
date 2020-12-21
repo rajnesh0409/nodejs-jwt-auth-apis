@@ -37,3 +37,12 @@ Update specific user details
 
 Delete specific user
 
+# POSTMAN APIS COLLECTION
+
+You can import the postman apis collection from below link.
+
+https://www.getpostman.com/collections/451f1ea7111d37d964e6
+
+
+
+
