@@ -99,7 +99,7 @@ exports.signIn = (req, res) => {
 		})
 		.catch((err) => {
 			return res.status(500).send({
-				message: "Error retrieving email id "
+				message: "Error retrieving email id ",
 			});
 		});
 };
@@ -107,7 +107,7 @@ exports.signIn = (req, res) => {
 exports.verifyToken = (req, res, next) => {
 	let token = req.headers["x-access-token"];
 	if (!token) {
-		return res.status(403).send({ message: "No token provided!" });
+		return res.status(401).send({ message: "Unauthorized!" });
 	}
 
 	jwt.verify(token, secretKey, (err, decoded) => {

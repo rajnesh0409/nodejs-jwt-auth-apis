@@ -51,7 +51,8 @@ exports.updateUser = (req, res) => {
         {
             name: req.body.name,
             description: req.body.description ? req.body.description : null,
-        }
+        },
+        { useFindAndModify: false }
     )
         .then((User) => {
             if (!User) {
@@ -79,7 +80,10 @@ exports.deleteUser = (req, res) => {
                     message: "User not found !",
                 });
             }
-            res.send({ success: true, message: "User deleted successfully!" });
+            return res.send({
+                success: true,
+                message: "User deleted successfully",
+            });
         })
         .catch((err) => {
             return res.status(500).send({
