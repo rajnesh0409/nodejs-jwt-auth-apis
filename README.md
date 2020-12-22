@@ -6,7 +6,7 @@ MongodB database connectivity,
 Collection creation and schemas building,
 Mongoose CRUD queries,
 JWT authentication and authorization,
-REST APIS testing with MOCHA framework and CHAI assertion library. 
+REST APIS BDD testing with MOCHA framework and CHAI assertion library with SHOULD interface. 
 
 # CRUD Operations -
 
