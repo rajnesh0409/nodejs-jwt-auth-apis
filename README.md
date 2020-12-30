@@ -16,6 +16,9 @@
     - "jsonwebtoken": "^8.5.1" - create and verify JWT tokens 
     - "mongoose": "^5.11.8" - write mongoDB queries
     - "uuid": "^8.3.2" - create unique ids
+    - "chai": "^4.2.0" - assertion library to write test cases
+    - "chai-http": "^4.3.0"-  assertion library to call REST API
+    - "mocha": "^8.2.1" - used to write unit test cases
     
 - Test database connectivity.
 - MongoDB collection creation and schemas building
@@ -61,6 +64,8 @@ https://www.getpostman.com/collections/451f1ea7111d37d964e6
 
 # REST APIS testing with MOCHA framework and CHAI assertion library. 
 
+Total test cases - 18
+
 Users
    -  /POST registerUser
       - ✓ it should not able to register user without name, email and password (44ms)
@@ -87,7 +92,23 @@ Users
       - ✓ it should not allow to delete a given UserId details with expired authorization token
       - ✓ it should delete a given UserId details
       
- 18 passing (12s)
+ Result - 18 passing (12s)
+ 
+ # Ready To Use 
+ 
+ - Get a clone of the repository or simply download as zip and unwrap in your local directory.
+ - Assuming you have already install nodeJS and mongoDB. 
+ - For mongoDB you can have installed it locally or can use cloud storage such as mongoDB Atlas.
+ - Navigate to app root folder in terminal.
+ 
+ - node app.js - start the application
+ - npm test - test unit test-cases
+ 
+ 
+ 
+ 
+ 
+ -
 
 
 
