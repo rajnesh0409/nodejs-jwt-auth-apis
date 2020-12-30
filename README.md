@@ -101,7 +101,9 @@ Users
  - For mongoDB you can have installed it locally or can use cloud storage such as mongoDB Atlas.
  - Navigate to app root folder in terminal.
  - commands
+   
    > node app.js - to start the application
+   
    > npm test - to test unit test-cases
 
  
