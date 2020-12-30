@@ -20,8 +20,8 @@
     - "chai-http": "^4.3.0"-  assertion library to call REST API
     - "mocha": "^8.2.1" - used to write unit test cases
     
-- Test database connectivity.
-- MongoDB collection creation and schemas building
+- Check mongoDB connectivity and environment variables settings.
+- MongoDB collection creation and schema building.
 - Write mongoose CRUD queries.
 - Protect REST APIs with JWT.
 - Write test cases with the help of MOCHA framework and CHAI assertion library with SHOULD interface.
