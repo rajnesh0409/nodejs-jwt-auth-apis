@@ -99,7 +99,7 @@ exports.signIn = (req, res) => {
 		})
 		.catch((err) => {
 			return res.status(500).send({
-				message: "Error retrieving email id ",
+				message: err.message || "Error retrieving email id"
 			});
 		});
 };

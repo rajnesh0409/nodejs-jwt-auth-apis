@@ -30,7 +30,7 @@ exports.getUser = (req, res) => {
         })
         .catch((err) => {
             return res.status(500).send({
-                message: "Error retrieving user details",
+                message: err.message || "Error retrieving user details",
             });
         });
 };
@@ -64,7 +64,7 @@ exports.updateUser = (req, res) => {
         })
         .catch((err) => {
             return res.status(500).send({
-                message: "Error updating user details",
+                message: err.message || "Error updating user details",
             });
         });
 };
@@ -87,7 +87,7 @@ exports.deleteUser = (req, res) => {
         })
         .catch((err) => {
             return res.status(500).send({
-                message: "Could not delete user",
+                message: err.message || "Could not delete user",
             });
         });
 };

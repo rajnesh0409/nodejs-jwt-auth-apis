@@ -33,7 +33,7 @@ app.get("/", function (req, res) {
 });
 
 // intialise server
-app.listen(PORT, (req, res) => {
+app.listen(PORT, () => {
 	console.log(`Server is up and running on ${PORT} port.`);
 });
 
