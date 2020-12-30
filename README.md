@@ -1,4 +1,4 @@
-# NodeJS, MongoDB, JWT authentication, CRUD operations, API testing with Mocha and Chai -
+# NodeJS, MongoDB, JWT authentication, CRUD operations, API testing with Mocha and Chai 
 
 - MongodB database connectivity,
 - Collection creation and schemas building,
@@ -6,7 +6,7 @@
 - JWT authentication and authorization,
 - REST APIs BDD testing with MOCHA framework and CHAI assertion library with SHOULD interface. 
 
-# CRUD Operations -
+# CRUD Operations 
 
 - signUp: (CREATE) (POST)
 
