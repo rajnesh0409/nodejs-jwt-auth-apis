@@ -1,7 +1,6 @@
 
 # NodeJS, MongoDB, JWT authentication, CRUD operations, REST API testing with Mocha and Chai 
 
-
 # Feature implemented
 
 - Develop REST APIS with basic CRUD operations.
