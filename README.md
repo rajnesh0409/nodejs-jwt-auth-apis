@@ -1,6 +1,4 @@
-# demoProj
-
-# NodeJS , MongoDB, JWT authentication, CRUD operations, API testing with Mocha and Chai -
+# NodeJS, MongoDB, JWT authentication, CRUD operations, API testing with Mocha and Chai -
 
 - MongodB database connectivity,
 - Collection creation and schemas building,
