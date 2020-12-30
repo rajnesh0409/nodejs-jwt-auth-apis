@@ -6,6 +6,7 @@
 - Develop REST APIS with basic CRUD operations.
 - Implement JWT authentication mechanism to secure APIs. 
 - REST APIs BDD testing.
+- ESLint
 
 ## Technical implementation
 
