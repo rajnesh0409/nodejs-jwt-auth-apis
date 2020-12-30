@@ -1,38 +1,56 @@
-# NodeJS, MongoDB, JWT authentication, CRUD operations, API testing with Mocha and Chai 
 
-- MongodB database connectivity
-- Collection creation and schemas building
-- Mongoose CRUD queries
-- JWT authentication and authorization
-- REST APIs BDD testing with MOCHA framework and CHAI assertion library with SHOULD interface
+# NodeJS, MongoDB, JWT authentication, CRUD operations, REST API testing with Mocha and Chai 
+
+
+# Feature implemented
+
+- Develop REST APIS with basic CRUD operations.
+- Implement JWT authentication mechanism to secure APIs. 
+- REST APIs BDD testing.
+
+# Technical implementation
+
+- Build directory structure on top of expressJS framework to get started.
+- Below is the list of some essential npm packages used in this project
+  
+    - "bcryptjs": "^2.4.3" - use to hash and compare passwords
+    - "jsonwebtoken": "^8.5.1" - create and verify JWT tokens 
+    - "mongoose": "^5.11.8" - write mongoDB queries
+    - "uuid": "^8.3.2" - create unique ids
+    
+- Test database connectivity.
+- MongoDB collection creation and schemas building
+- Write mongoose CRUD queries.
+- Protect REST APIs with JWT.
+- Write test cases with the help of MOCHA framework and CHAI assertion library with SHOULD interface.
 
 # CRUD Operations 
 
-- signUp: (CREATE) (POST)
+- signUp API: (POST)
 
 Check email and userId duplication in records
 and registered users
    
-- signIn: (POST)
+- signIn API: (POST) 
 
-Find username in database, if it exists
+Find username in database, if user exists,
 compare the passwords using bcrypt, if it is correct
-then generate a token using jsonwebtoken
+then, generate a token using jsonwebtoken
 and return user information & access Token.
 
-- getUsersList (READ) (GET)
+- getUsersList (GET)
 
 Get all users list
 
-- getUsersByID (READ) (GET)
+- getUsersByID (GET)
 
 Get specific user details
 
-- UpdateUser (UPDATE) (PUT)
+- updateUser (PUT)
 
 Update specific user details
 
-- DeleteUser (DELETE) (DELETE)
+- deleteUser (DELETE)
 
 Delete specific user
 
