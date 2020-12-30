@@ -1,13 +1,13 @@
 
 ## NodeJS, MongoDB, JWT authentication, CRUD operations, REST API testing with Mocha and Chai 
 
-# Feature implemented
+## Feature implemented
 
 - Develop REST APIS with basic CRUD operations.
 - Implement JWT authentication mechanism to secure APIs. 
 - REST APIs BDD testing.
 
-# Technical implementation
+## Technical implementation
 
 - Build directory structure on top of expressJS framework to get started.
 - Below is the list of some essential npm packages used in this project
@@ -26,43 +26,43 @@
 - Protect REST APIs with JWT.
 - Write test cases with the help of MOCHA framework and CHAI assertion library with SHOULD interface.
 
-# CRUD Operations 
+## CRUD Operations 
 
-- signUp API: (POST)
+1. signUp API: (POST)
 
 Check email and userId duplication in records
 and registered users
    
-- signIn API: (POST) 
+2. signIn API: (POST) 
 
 Find username in database, if user exists,
 compare the passwords using bcrypt, if it is correct
 then, generate a token using jsonwebtoken
 and return user information & access Token.
 
-- getUsersList API (GET)
+3. getUsersList API (GET)
 
 Get all users list
 
-- getUsersByID API (GET)
+4. getUsersByID API (GET)
 
 Get specific user details
 
-- updateUser API (PUT)
+5. updateUser API (PUT)
 
 Update specific user details
 
-- deleteUser API (DELETE)
+6. deleteUser API (DELETE)
 
 Delete specific user
 
-# POSTMAN APIS COLLECTION
+## POSTMAN APIS COLLECTION
 
 You can import the postman apis collection from below link.
 
 https://www.getpostman.com/collections/451f1ea7111d37d964e6
 
-# REST APIS testing with MOCHA framework and CHAI assertion library. 
+## REST APIS testing with MOCHA framework and CHAI assertion library. 
 
 Total test cases - 18
 
@@ -94,15 +94,15 @@ Users
       
  Result - 18 passing (12s)
  
- # Ready To Use 
+ ## Ready To Use 
  
  - Get a clone of the repository or simply download as zip and unwrap in your local directory.
  - Assuming you have already install nodeJS and mongoDB. 
  - For mongoDB you can have installed it locally or can use cloud storage such as mongoDB Atlas.
  - Navigate to app root folder in terminal.
  - commands
-   - node app.js - to start the application
-   - npm test - to test unit test-cases
+   > node app.js - to start the application
+   > npm test - to test unit test-cases
 
  
 
