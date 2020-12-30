@@ -37,19 +37,19 @@ compare the passwords using bcrypt, if it is correct
 then, generate a token using jsonwebtoken
 and return user information & access Token.
 
-- getUsersList (GET)
+- getUsersList API (GET)
 
 Get all users list
 
-- getUsersByID (GET)
+- getUsersByID API (GET)
 
 Get specific user details
 
-- updateUser (PUT)
+- updateUser API (PUT)
 
 Update specific user details
 
-- deleteUser (DELETE)
+- deleteUser API (DELETE)
 
 Delete specific user
 
