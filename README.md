@@ -32,7 +32,7 @@
 1. signUp API: (POST)
 
 Check email and userId duplication in records
-and registered users
+and registered the users
    
 2. signIn API: (POST) 
 
@@ -103,9 +103,9 @@ Users
  - Navigate to app root folder in terminal.
  - commands
    
-   > node app.js - to start the application
+   > node app.js - start the application
    
-   > npm test - to test unit test-cases
+   > npm test - run unit test-cases
 
  
 
