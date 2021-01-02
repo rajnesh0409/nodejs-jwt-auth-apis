@@ -99,7 +99,7 @@ Users
  
  - Get a clone of the repository or simply download as zip and unwrap in your local directory.
  - Assuming you have already install nodeJS and mongoDB. 
- - For mongoDB you can have installed it locally or can use cloud storage such as mongoDB Atlas.
+ - For mongoDB, you can installed it locally or can use cloud storage such as mongoDB Atlas.
  - Navigate to app root folder in terminal.
  - commands
    
