@@ -1,5 +1,5 @@
 
-## NodeJS, MongoDB, JWT authentication, CRUD operations, REST API, Mocha and Chai 
+## NodeJS, MongoDB, JWT authentication, CRUD operations, REST API, Mocha and Chai unit testing
 
 ## Feature implemented
 
