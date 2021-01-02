@@ -1,6 +1,6 @@
 {
-  "name": "codedemo",
-  "version": "0.0.0",
+  "name": "jwt-auth-rest-api",
+  "version": "1.1.1",
   "private": true,
   "scripts": {
     "test": "mocha --timeout 10000"
