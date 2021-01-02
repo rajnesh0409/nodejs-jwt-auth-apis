@@ -5,6 +5,12 @@ const bcrypt = require("bcryptjs");
 const uuid = require("uuid");
 const { secretKey } = require("../config/env");
 
+/*
+	* Create, verify and sace new user 
+	* @param {Object} req: express request object
+	* @param {Object} res: express result object
+*/
+
 // Create, verify and Save a new User
 exports.registerUser = (req, res) => {
 	// Validate request
@@ -62,6 +68,12 @@ exports.registerUser = (req, res) => {
 		});
 };
 
+/*
+	* SignIn user 
+	* @param {Object} req: express request object
+	* @param {Object} res: express result object
+*/
+
 exports.signIn = (req, res) => {
 	User.findOne({
 		email: req.body.email,
@@ -102,6 +114,13 @@ exports.signIn = (req, res) => {
 			});
 		});
 };
+
+/*
+	* Middleware to verify the token and store the user data in req.userId
+	* @param {Object} req: express request object
+	* @param {Object} res: express result object
+	* @param {Function} next: express next function 
+*/
 
 exports.verifyToken = (req, res, next) => {
 	let token = req.headers["x-access-token"];

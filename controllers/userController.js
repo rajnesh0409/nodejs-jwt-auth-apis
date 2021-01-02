@@ -1,6 +1,12 @@
 const mongoose = require("mongoose");
 const User = require("../models/userModel");
 
+/*
+    * Get all users list 
+    * @param {Object} req: express request object
+    * @param {Object} res: express result object
+*/
+
 exports.getAllUsers = (req, res) => {
     User.find()
         .then((Users) => {
@@ -14,6 +20,12 @@ exports.getAllUsers = (req, res) => {
             });
         });
 };
+
+/*
+    * Get userId specific user details 
+    * @param {Object} req: express request object
+    * @param {Object} res: express result object
+*/
 
 exports.getUser = (req, res) => {
     User.findOne({
@@ -33,6 +45,12 @@ exports.getUser = (req, res) => {
             });
         });
 };
+
+/*
+    * Update user details by UserId
+    * @param {Object} req: express request object
+    * @param {Object} res: express result object
+*/
 
 exports.updateUser = (req, res) => {
     // Validate Request
@@ -67,6 +85,12 @@ exports.updateUser = (req, res) => {
             });
         });
 };
+
+/*
+    * Delete user details by UserId
+    * @param {Object} req: express request object
+    * @param {Object} res: express result object
+*/
 
 // Delete a User with the specified UserId in the request
 exports.deleteUser = (req, res) => {
