@@ -1,5 +1,5 @@
 
-## NodeJS, MongoDB, JWT authentication, CRUD operations, REST API testing with Mocha and Chai 
+## NodeJS, MongoDB, JWT authentication, CRUD operations, REST API, Mocha and Chai unit testing
 
 ## Feature implemented
 
@@ -32,7 +32,7 @@
 1. signUp API: (POST)
 
 Check email and userId duplication in records
-and registered users
+and registered the users
    
 2. signIn API: (POST) 
 
@@ -99,13 +99,13 @@ Users
  
  - Get a clone of the repository or simply download as zip and unwrap in your local directory.
  - Assuming you have already install nodeJS and mongoDB. 
- - For mongoDB you can have installed it locally or can use cloud storage such as mongoDB Atlas.
+ - For mongoDB, you can installed it locally or can use cloud storage such as mongoDB Atlas.
  - Navigate to app root folder in terminal.
  - commands
    
-   > node app.js - to start the application
+   > node app.js - start the application
    
-   > npm test - to test unit test-cases
+   > npm test - run unit test-cases
 
  
 
