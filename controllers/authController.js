@@ -6,12 +6,11 @@ const uuid = require("uuid");
 const { secretKey } = require("../config/env");
 
 /*
-	* Create, verify and sace new user 
+	* Create, verify and save new user 
 	* @param {Object} req: express request object
 	* @param {Object} res: express result object
 */
 
-// Create, verify and Save a new User
 exports.registerUser = (req, res) => {
 	// Validate request
 	if (!req.body.email) {

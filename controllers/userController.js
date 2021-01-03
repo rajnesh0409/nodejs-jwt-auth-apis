@@ -92,7 +92,6 @@ exports.updateUser = (req, res) => {
     * @param {Object} res: express result object
 */
 
-// Delete a User with the specified UserId in the request
 exports.deleteUser = (req, res) => {
     User.findOneAndRemove({
         userId: req.params.userId,
