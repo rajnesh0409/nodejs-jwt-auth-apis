@@ -1,4 +1,3 @@
-const mongoose = require("mongoose");
 const User = require("../models/userModel");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
@@ -35,7 +34,7 @@ exports.registerUser = (req, res) => {
 			if (User) {
 				return res.status(404).send({
 					message:
-						"Failed! EmailId is already in use" + req.body.email,
+						"Failed! EmailId is already in use - " + req.body.email,
 				});
 			}
 		})

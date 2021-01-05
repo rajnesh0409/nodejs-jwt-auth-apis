@@ -1,4 +1,3 @@
-const mongoose = require("mongoose");
 const User = require("../models/userModel");
 
 /*
@@ -6,7 +5,6 @@ const User = require("../models/userModel");
     * @param {Object} req: express request object
     * @param {Object} res: express result object
 */
-
 exports.getAllUsers = (req, res) => {
     User.find()
         .then((Users) => {

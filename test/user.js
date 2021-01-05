@@ -4,9 +4,11 @@ const server = require("../app");
 chai.should();
 chai.use(chaiHttp);
 
-const token =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjgzOTQwZWJkLTVmZTktNDFkMC1hMTMwLTNjN2U4ZTFjNGU0MiIsImlhdCI6MTYwODY2MDEyMCwiZXhwIjoxNjA4NjYzNzIwfQ.6nw_lEYtIODVE6QhRxCfb-MPa3tSU3XOYFi4dm_XZsE";
-const expiredToken = "asdhfkglouytwrw";
+// Pass valid token value
+const token = "eyJhbGciOiJIUhwIjoxNjA6nw_lEYtIODVE6QhRxCfb-MPa3tSU3XOYFi4dm_XZsE";
+// Pass invalid token value
+const expiredToken = "6QhRxCfb-MPa3tSU3Xasdhfkglouytwrw6QhRxCfb-MPa3tSU3X";
+// Pass valid userId
 const userId = "4664163c-a39f-42b1-9ffc-7fa03a30131c";
 
 /* Test registration API */
@@ -31,10 +33,10 @@ describe("Users", () => {
     });
     it("it should not able to register with already registered emailId", (done) => {
       const data = {
-        email: "rajtest@yopmail.com",
+        email: "alreadyregister@yopmail.com",
         password: "Test12345",
         name: "testuser",
-        description: "This is user test",
+        description: "This is user test"
       };
       chai
         .request(server)
@@ -49,10 +51,10 @@ describe("Users", () => {
     });
     it("it should able to register a new user", (done) => {
       const data = {
-        email: "rajtest367@yopmail.com",
+        email: "validuser@yopmail.com",
         password: "Test12345",
         name: "testuser",
-        description: "This is user test",
+        description: "This is user test"
       };
       chai
         .request(server)
@@ -71,8 +73,8 @@ describe("Users", () => {
   describe("/POST signIn", () => {
     it("it should not able to signIn if user does not exist", (done) => {
       const data = {
-        email: "raj345@yopmail.com",
-        password: "Test12345",
+        email: "fakeuser@yopmail.com",
+        password: "Test12345"
       };
       chai
         .request(server)
@@ -87,8 +89,8 @@ describe("Users", () => {
     });
     it("it should not able to signIn with wrong credentials", (done) => {
       const data = {
-        email: "rajtest3@yopmail.com",
-        password: "Test111",
+        email: "validuser@yopmail.com",
+        password: "wrongpassword"
       };
       chai
         .request(server)
@@ -103,8 +105,8 @@ describe("Users", () => {
     });
     it("it should able to signIn with valid credentials", (done) => {
       const data = {
-        email: "rajtest12345@yopmail.com",
-        password: "Test12345",
+        email: "validuser@yopmail.com",
+        password: "validpassword"
       };
       chai
         .request(server)
@@ -259,10 +261,10 @@ describe("Users", () => {
         .delete("/removeUser/" + userId)
         .end((err, res) => {
           res.body.should.be.a("object");
-    res.should.have.status(401);
-  res.body.should.have
-    .property("message")
-    .eql("Unauthorized!");
+          res.should.have.status(401);
+          res.body.should.have
+            .property("message")
+            .eql("Unauthorized!");
           done();
         });
     });
@@ -273,10 +275,10 @@ describe("Users", () => {
         .set("x-access-token", expiredToken)
         .end((err, res) => {
           res.body.should.be.a("object");
-    res.should.have.status(401);
-  res.body.should.have
-    .property("message")
-    .eql("Unauthorized!");
+          res.should.have.status(401);
+          res.body.should.have
+            .property("message")
+            .eql("Unauthorized!");
           done();
         });
     });
